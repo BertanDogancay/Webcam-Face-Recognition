@@ -1,0 +1,6 @@
+﻿  Face_Recognition.cpp
+C:\Users\berta\Desktop\VS++\Face_Recognition\Face_Recognition\FaceRec.h(104,7): warning C4101: 'key': unreferenced local variable
+C:\Users\berta\Desktop\VS++\Face_Recognition\Face_Recognition\FaceRec.h(239,102): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\berta\Desktop\VS++\Face_Recognition\Face_Recognition\FaceRec.h(241,112): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\berta\Desktop\VS++\Face_Recognition\Face_Recognition\FaceRec.h(242,144): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  Face_Recognition.vcxproj -> C:\Users\berta\Desktop\VS++\Face_Recognition\x64\Debug\Face_Recognition.exe
