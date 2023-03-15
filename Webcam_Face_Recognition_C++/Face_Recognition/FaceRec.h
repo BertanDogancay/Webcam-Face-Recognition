@@ -61,7 +61,7 @@ void detectAndDisplay(Mat frame) {
 		resize(crop, res, Size(128, 128), 0, 0, INTER_LINEAR);
 		cvtColor(crop, gray, COLOR_BGR2GRAY);
 		stringstream ssfn;
-		fileName = "C:\\Users\\berta\\Desktop\\VS++\\Face_Recognition\\Faces\\";
+		fileName = "<path> to faces directory";
 		ssfn << fileName.c_str() << name << fileNumber << ".jpg";
 		fileName = ssfn.str();
 		imwrite(fileName, res);
@@ -93,7 +93,7 @@ void addFace() {
 		return;
 	}
 
-	if (!face_cascade.load("C:\\opencv\\opencv\\install\\etc\\haarcascades\\haarcascade_frontalface_alt.xml")) {
+	if (!face_cascade.load("haarcascades\\haarcascade_frontalface_alt.xml")) {
 		cout << "error" << endl;
 		return;
 	}
