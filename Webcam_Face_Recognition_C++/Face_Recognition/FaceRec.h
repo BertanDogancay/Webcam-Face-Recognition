@@ -125,7 +125,7 @@ void addFace() {
 
 static void dbread(vector<Mat>& images, vector<int>& labels) {
 	vector<cv::String> fn;
-	fileName = "C:\\Users\\berta\\Desktop\\VS++\\Face_Recognition\\Faces\\";
+	fileName = "<path> to faces directory";
 	glob(fileName, fn, false);
 
 	size_t count = fn.size();
@@ -158,7 +158,7 @@ void eigenFaceTrainer() {
 
 	model->train(images, labels);
 
-	model->save("C:\\Users\\berta\\Desktop\\VS++\\Face_Recognition\\eigenface.yml");
+	model->save("eigenface.yml");
 
 	cout << "Training finished...." << endl;
 	waitKey(10000);
@@ -168,19 +168,14 @@ void FaceRecognition() {
 	cout << "Start recognizing..." << endl;
 
 	Ptr<FaceRecognizer> model = FisherFaceRecognizer::create();
-	model->read("C:\\Users\\berta\\Desktop\\VS++\\Face_Recognition\\eigenface.yml");
-
-	//Mat testSample = imread("C:\\Users\\berta\\Desktop\\Bertan.jpg", 0);
-
-	/*int img_width = testSample.cols;
-	int img_height = testSample.rows;*/
+	model->read("eigenface.yml");
 
 	int img_width = 128;
 	int img_height = 128;
 
 	string window = "Capture - face detection";
 
-	if (!face_cascade.load("C:\\opencv\\opencv\\install\\etc\\haarcascades\\haarcascade_frontalface_alt.xml")) {
+	if (!face_cascade.load("haarcascades\\haarcascade_frontalface_alt.xml")) {
 		cout << "Error loading file" << endl;
 		return;
 	}
