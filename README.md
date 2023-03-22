@@ -1,5 +1,5 @@
 # Webcam-Face-Recognition
-This is a face recognition system that allows you to categorize people based on their access status, These categories are (Access) and (No Access). Image 1 folder is for people that have access and Image 2 folder is for people that do not have access. If you put the picture of your face in Image 1 folder you will see a green box covering your face on the camera, and if you put it in Image 2 folder, you will see a red box with a text on top that says "FAIL" on it.
+This is a face recognition system that allows you to categorize people based on their access status, These categories are (Access) and (No Access). Image 1 folder is for people that have access and Image 2 folder is for people that do not have access. If you put the picture of your face in Image 1 folder you will see a green box covering your face on the camera, and if you put it in Image 2 folder, you will see a red box with a text on top that says "FAIL" on it
 
 <table>
   <thead>
